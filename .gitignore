@@ -302,6 +302,4 @@ TSWLatexianTemp*
 *.jpg
 *.png
 *.pdf
-resume1.pdf
-resume1.tex
-resume2.tex
+!resume.pdf
