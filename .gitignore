@@ -301,5 +301,6 @@ TSWLatexianTemp*
 #*Notes.bib
 *.jpg
 *.png
-*.pdf
-!resume.pdf
+*.tex
+!resume.tex
+build/
