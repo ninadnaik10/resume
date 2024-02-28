@@ -299,6 +299,9 @@ TSWLatexianTemp*
 # option is specified. Footnotes are the stored in a file with suffix Notes.bib.
 # Uncomment the next line to have this generated file ignored.
 #*Notes.bib
+*.jpg
+*.png
 *.pdf
 resume1.pdf
 resume1.tex
+resume2.tex

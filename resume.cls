@@ -66,7 +66,7 @@
 \def \printaddress #1{
   \begingroup
     \def \\ {\addressSep\ }
-    \centerline{#1}
+      \centerline{#1}    
   \endgroup
   \par
   \addressskip
