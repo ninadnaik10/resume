@@ -1,6 +1,6 @@
 # Resume - Ninad Naik
 
-This repo contains workflow to build the resume PDF using LaTeX.
+This repo contains the workflow to build the resume PDF using LaTeX.
 
 Hosted on [resume.ninadnaik.xyz](https://resume.ninadnaik.xyz)
 
