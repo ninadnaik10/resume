@@ -305,3 +305,5 @@ TSWLatexianTemp*
 !resume.tex
 build/
 *.sh
+*.pdf
+!resume.pdf
