@@ -303,7 +303,10 @@ TSWLatexianTemp*
 *.png
 *.tex
 !resume.tex
-build/
+build/*
 *.sh
 *.pdf
 !resume.pdf
+*.cls
+!resume.cls
+!build/resume.pdf

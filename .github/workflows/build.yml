@@ -31,12 +31,10 @@ jobs:
 
             - name: Post Processing
               run: |
-                  mkdir build 
-                  cp *.pdf build/ 
                   cp index.html build/
                   
             - name: Git add
-              run: git add resume.pdf
+              run: git add build/resume.pdf
               
             - name: Deploy to GitHub Pages
               uses: JamesIves/github-pages-deploy-action@4.1.4
