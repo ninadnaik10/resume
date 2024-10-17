@@ -310,3 +310,4 @@ build/*
 *.cls
 !resume.cls
 !build/resume.pdf
+!metalogo.png
