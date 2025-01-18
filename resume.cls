@@ -1,21 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Medium Length Professional CV - RESUME CLASS FILE
 %
-% This template has been downloaded from:
-% http://www.LaTeXTemplates.com
-%
-% This class file defines the structure and design of the template. 
-%
-% Original header:
-% Copyright (C) 2010 by Trey Hunner
-%
-% Copying and distribution of this file, with or without modification,
-% are permitted in any medium without royalty provided the copyright
-% notice and this notice are preserved. This file is offered as-is,
-% without any warranty.
-%
-% Created by Trey Hunner and modified by www.LaTeXTemplates.com
-%
+% Modified version with reduced spacing and margins
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
@@ -27,6 +13,8 @@
 \usepackage{ifthen} % Required for ifthenelse statements
 \usepackage{xltabular}
 \usepackage{hyperref}
+\usepackage[margin=0.3in]{geometry} % Added to reduce margins
+
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -125,15 +113,15 @@
   {\em #3} \hfill {\em #4} % Italic job title and location
   }\smallskip
   \begin{list}{$\cdot$}{\leftmargin=0em} % \cdot used for bullets, no indentation
-   \itemsep -0.5em \vspace{-0.5em} % Compress items in list together for aesthetics
+   \itemsep -0.7em \vspace{-0.7em} % Reduced spacing between items (changed from -0.5em)
   }{
   \end{list}
-  \vspace{0.5em} % Some space after the list of bullet points
+  \vspace{0.3em} % Reduced space after bullet points (changed from 0.5em)
 }
 
-% The below commands define the whitespace after certain things in the document - they can be \smallskip, \medskip or \bigskip
-\def\namesize{\LARGE} % Size of the name at the top of the document
-\def\addressskip{\smallskip} % The space between the two address (or phone/email) lines
-\def\sectionlineskip{\medskip} % The space above the horizontal line for each section 
-\def\nameskip{\medskip} % The space after your name at the top
-\def\sectionskip{\medskip} % The space after the heading section
+% The below commands define the whitespace after certain things in the document
+\def\namesize{\Large} % Reduced name size (changed from \LARGE)
+\def\addressskip{\smallskip} % Space between address lines
+\def\sectionlineskip{\smallskip} % Reduced space above section lines (changed from \medskip)
+\def\nameskip{\smallskip} % Reduced space after name (changed from \medskip)
+\def\sectionskip{\smallskip} % Reduced space after sections (changed from \medskip)
