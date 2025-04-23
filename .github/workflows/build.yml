@@ -16,13 +16,12 @@ on:
       - "index.html"
       - "metalogo.png"
       - ".github/workflows/**"
-
 jobs:
   build_latex:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
 
@@ -30,17 +29,17 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume.tex
+          args: -output-directory=build
 
-      - name: Post Processing
-        run: |
-          cp -t build/ index.html metalogo.png
+      - name: Create build directory if it doesn't exist
+        run: mkdir -p build
 
-      - name: Git add
-        run: git add build/resume.pdf
+      - name: Copy web assets to build directory
+        run: cp index.html metalogo.png build/
 
       - name: Deploy to GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@4.1.4
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          BRANCH: gh-pages
-          FOLDER: build
-          CLEAN: true
+          branch: gh-pages
+          folder: build
+          clean: true
