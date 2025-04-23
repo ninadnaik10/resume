@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2025.4.1)  23 APR 2025 18:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=latex 2025.4.1)  23 APR 2025 19:21
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -541,10 +541,10 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  13813 strings out of 473191
  235233 string characters out of 5717917
- 644515 words of memory out of 5000000
+ 644497 words of memory out of 5000000
  36897 multiletter control sequences out of 15000+600000
  575764 words of font info for 49 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,6n,93p,1498b,437s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on build/resume.dvi (1 page, 14400 bytes).
+Output written on build/resume.dvi (1 page, 14484 bytes).
