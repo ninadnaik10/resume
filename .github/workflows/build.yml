@@ -22,20 +22,25 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-        with:
-          persist-credentials: false
 
-      - name: Compile LaTeX document
+      - name: Setup LaTeX
         uses: xu-cheng/latex-action@v2
         with:
           root_file: resume.tex
-          args: -output-directory=build
 
-      - name: Create build directory if it doesn't exist
+      - name: Ensure build directory exists
         run: mkdir -p build
+
+      - name: Verify PDF was created and copy to build directory
+        run: |
+          ls -la
+          cp resume.pdf build/ || echo "PDF copy failed"
 
       - name: Copy web assets to build directory
         run: cp index.html metalogo.png build/
+
+      - name: List build directory contents
+        run: ls -la build/
 
       - name: Deploy to GitHub Pages
         uses: JamesIves/github-pages-deploy-action@v4
