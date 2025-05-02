@@ -311,3 +311,4 @@ build/*
 !resume.cls
 !build/resume.pdf
 !metalogo.png
+!setup-latex.sh
