@@ -2,7 +2,7 @@
 
 This repo contains the workflow to build the resume PDF using LaTeX.
 
-Hosted on [resume.ninadnaik.xyz](https://resume.ninadnaik.me)
+Hosted on [resume.ninadnaik.me](https://resume.ninadnaik.me)
 
 ### Credits
 
