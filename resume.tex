@@ -18,7 +18,17 @@
 %     \includegraphics[width=3cm]{photo.jpg} % Adjust the width as needed
 %   };
 % \end{tikzpicture}
-\name{\textsc{\scalebox{1.25}{N}inad \scalebox{1.25}{N}aik}}
+% NOTE: Do not wrap the name in \scalebox / \fontsize / small caps. Any mid-word
+% font-size change splits the name into separate PDF text runs, so ATS text
+% extraction reads "N INAD N AIK" instead of "NINAD NAIK". Verified with pdftotext.
+\name{\textsc{Ninad Naik}}
+
+% PDF metadata: some ATS read the Author/Title fields rather than the page text.
+\hypersetup{
+    pdfauthor={Ninad Naik},
+    pdftitle={Ninad Naik - Resume},
+    pdfsubject={Resume},
+}
 
 % Your name
 % You can merge both of these into a single line, if you do not have a website.
@@ -45,7 +55,7 @@
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Education}
     {\bf Bachelor of Engineering in Information Technology} \hfill {2021 - 2025 } \\
-    University of Mumbai — Thadomal Shahani Engineering College, Mumbai  \hfill CGPA: {\bf 8.54 / 10}
+    University of Mumbai, Thadomal Shahani Engineering College, Mumbai  \hfill CGPA: {\bf 8.54 / 10}
 
 \end{rSection}
 
