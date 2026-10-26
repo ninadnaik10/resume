@@ -112,12 +112,12 @@ builds off the live server to on-demand instances from an \textbf{AMI} (\href{ht
     \item Built a \textbf{real-time website click analytics platform} with a FastAPI ingestion server, Kafka message queue, and ClickHouse storage pipeline that captures user interactions via a lightweight JavaScript tracking script.
     \item Developed a React dashboard that renders target websites in an iframe and overlays a \textbf{color-coded heatmap visualization of click density} using canvas, powered by live data queried from ClickHouse
     \end{itemize}
-     \textbf{SpeakSure}, \textit{Python, FastAPI, Tensorflow, React.js, MongoDB} | (\href{https://speaksure.ninadnaik.me/} {Live app}, \href{https://github.com/ninadnaik10/behavioural-interview-demo} {GitHub}) \hfill {October 2025}
+     \textbf{SpeakSure}, \textit{Python, FastAPI, Tensorflow, React.js, MongoDB} | (\href{https://speaksure.ninadnaik.me/} {Live app}, \href{https://github.com/ninadnaik10/speaksure} {GitHub}) \hfill {October 2025}
     \begin{itemize}
         \setlength\itemsep{-0.6em}
-        \item  Developed an \textbf{Automated AI Behavioural Interview system} that quantifies \textbf{confidence level} in candidate's speech and provides AI insights to the hiring manager. Presented \textbf{research paper} at ICCIS 25 based on new models and findings.
+        \item  Built an \textbf{AI behavioural interview platform} that scores \textbf{spoken confidence} (1 to 5) with Wav2Vec2 and an MLP, with transcription, speech rate, filler words and \textbf{Gemini feedback}, analysed by a \textbf{background job queue on MongoDB}.
                   % \item Integrated features to save results, \textbf{analyze progress} and \textbf{provide comprehensive feedback}.
-        \item Trained \textbf{multilayer perceptron (MLP)} and \textbf{Fuzzy Hypersphere Neural Network} models on a custom made dataset with \textbf{751} audio samples of 30 seconds each by extracting features with Wav2Vec2 and achieved \textbf{96\%} relaxed testing accuracy.
+        \item Moved inference from PyTorch and TensorFlow to \textbf{ONNX Runtime}, cutting about \textbf{3.5 GB} of ML dependencies from the server while running \textbf{19\% faster} per chunk; models trained on a custom \textbf{751}-clip dataset (paper at ICCIS 2025).
               % \item Achieved the \textbf{3rd prize} in the Department-level Mini Project Competition (PyExpo 2.0).
     \end{itemize}
 
