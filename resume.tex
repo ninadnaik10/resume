@@ -35,12 +35,15 @@
 \address{
     \faIcon{phone} +919769331376 \\
     \faIcon{envelope} \href{mailto:ninadnaik07@gmail.com}{ninadnaik07@gmail.com} \\ 
-    \faIcon{linkedin} \href{https://linkedin.com/in/ninadn}{/ninadn} \\ 
-    \faIcon{github} \href{https://github.com/ninadnaik10}{/ninadnaik10} \\ 
+    \faIcon{linkedin} \href{https://linkedin.com/in/ninadn}{linkedin.com/in/ninadn} \\ 
+    \faIcon{github} \href{https://github.com/ninadnaik10}{github.com/ninadnaik10} \\ 
     \faIcon{globe} \href{https://ninadnaik.me}{ninadnaik.me}
 }
 
 \linespread{0.95}
+
+% Never hyphenate technology names: a split like "Click-House" breaks ATS keyword matching.
+\hyphenation{ClickHouse HyperLogLog PostgreSQL MongoDB JavaScript TypeScript Kubernetes WebSockets ServiceNow Salesforce Coccinelle Devicetree}
 
 \begin{document}
 
@@ -65,25 +68,21 @@
 \textbf{Associate Backend Developer}, \textit{Commotion} (acq. by Tata Communications) (\href{https://gocommotion.com}{gocommotion.com})  \hfill Jan 2025 - Sep 2026
 \begin{itemize}
         \itemsep -6pt {}
-        \item Promoted from Backend Developer Intern (January 2025 - June 2025) 
-    \item Engineered \textbf{low-latency backend architectures} using NestJS and FastAPI, utilizing targeted database indexes and query optimization to handle \textbf{high-concurrency enterprise workloads}.
-\item Developed \textbf{MCP and A2A orchestration layer} for real-time contextual voice and text AI agents.
-\item Built robust \textbf{AI integrations} with platforms like Salesforce, ServiceNow, and SAP, and 100+ others, unifying workflows.
-\item Enforced security using OAuth2.0 and JWT auth schemes, ensuring platform integrity via SAST security analysis.
-\item Developed \textbf{low-latency Voice AI} solutions in collaboration with \textbf{multiple Tata companies and MNCs} to streamline automated operations and enhance customer experience.
+        \item Promoted from Backend Developer Intern (Jan 2025 - Jun 2025)
+    \item Built and shipped \textbf{100+ enterprise integration connectors} in NestJS and TypeScript, exposing \textbf{3,200+ agent-callable actions} and \textbf{325 webhook triggers} for \textbf{Voice AI agents} across SAP, Oracle, Salesforce, ServiceNow and Workday.
+    \item Cut \textbf{200 to 300 ms} from every agent tool call in the \textbf{Model Context Protocol (MCP)} gateway built with FastAPI by replacing a loopback HTTP call with an in-process handler, and added composite \textbf{PostgreSQL indexes} to its hot lookup path.
+    \item Fixed an OAuth flow that broke under Kubernetes pod autoscaling by moving SSE session state to \textbf{Redis Pub/Sub}, and \textbf{load-tested} the MCP gateway at \textbf{40 to 500} concurrent voice-call sessions to size production pods.
+    \item Implemented \textbf{OAuth 2.0} Auth Code and Client Credentials flows, extended \textbf{Agent-to-Agent (A2A)} agents to OAuth over \textbf{gRPC}, and remediated \textbf{Trivy SAST} findings across Docker images and Helm charts.
+    \item Delivered integrations for \textbf{7 enterprise accounts} including Tata companies and MNCs.
 \end{itemize}
 
 
-    \textbf{Full Stack Developer Intern}, \textit{Arxena Inc.} (\href{https://arxena.com}{arxena.com})  \hfill June 2024 - July 2024
+    \textbf{Full Stack Developer Intern}, \textit{Arxena Inc.} (\href{https://arxena.com}{arxena.com})  \hfill Jun 2024 - Jul 2024
 
     \begin{itemize}
         \itemsep -6pt {}
-         \item Built a \textbf{GPT-powered WhatsApp recruitment chatbot} in \textbf{NestJS, GraphQL and WebSocket API} that screened
-              candidates on JD-based questions, shared JD PDFs, stored resumes
- in \textbf{Amazon S3} and transcribed voice answers,
-              with a WhatsApp chat UI in \textbf{React.js} inside \textbf{Twenty CRM} showing each candidate's CRM status.
-        \item Reduced \textbf{AWS EC2} costs by up to \textbf{75\%} by moving
-builds off the live server to on-demand instances from an \textbf{AMI} (\href{https://gist.github.com/ninadnaik10/7e9faf7f9d68035a5fe5a89a3a599c0d}{details}).
+         \item Developed a \textbf{GPT-powered WhatsApp recruitment chatbot} in \textbf{NestJS, GraphQL and WebSockets} that screened candidates, stored resumes in \textbf{Amazon S3} and transcribed voice answers, with a \textbf{React.js} chat UI in \textbf{Twenty CRM}.
+        \item Reduced a CRM server's \textbf{AWS EC2} cost by \textbf{75\%} by running builds on on-demand instances launched from an \textbf{AMI} (\href{https://gist.github.com/ninadnaik10/7e9faf7f9d68035a5fe5a89a3a599c0d}{details}).
 
     \end{itemize}
 \end{rSection}
@@ -91,12 +90,12 @@ builds off the live server to on-demand instances from an \textbf{AMI} (\href{ht
 \begin{rSection}{Open Source Mentorship}
 
 \vspace{-1.25em}
-\item \textbf{The Linux Foundation - LFX - Linux Kernel Mentorship Program mentee, Spring 2026} (\href{https://mentorship.lfx.linuxfoundation.org/project/53378ec5-48d7-4c49-a01f-8cbd3948db3d}{link}) \hfill {March 2026 - August 2026}
+\item \textbf{The Linux Foundation - LFX - Linux Kernel Mentorship Program mentee, Spring 2026} (\href{https://mentorship.lfx.linuxfoundation.org/project/53378ec5-48d7-4c49-a01f-8cbd3948db3d}{link}) \hfill {Mar 2026 - Aug 2026}
 \begin{itemize}
 \setlength\itemsep{-0.6em}
-    \item Graduated with \textbf{11 patches} \href{https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?qt=grep&q=ninadnaik07%40gmail.com}{contributed} to Linux Kernel mainline; published a \href{https://tech.ninadnaik.me/lfx-lkmp}{blog} sharing my experience.
+    \item Graduated with \textbf{11 patches} \href{https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/log/?qt=grep&q=ninadnaik07%40gmail.com}{contributed} to Linux kernel mainline; published a \href{https://tech.ninadnaik.me/lfx-lkmp}{blog} on the program.
     \item Converted text-based \textbf{Devicetree bindings} to JSON Schema; fixed documentation links, typos, and driver error handling.
-    \item Worked with \textbf{kernel development workflow}, \textbf{patch submission}, and \textbf{review cycles} and used tools like \textbf{cscope}, \textbf{Coccinelle}, and \textbf{smatch} for static analysis. Selected for the mentorship program from \textbf{693 applicants}.
+    \item Used \textbf{cscope}, \textbf{Coccinelle} and \textbf{Smatch} for static analysis across \textbf{patch submission} and \textbf{review}; selected from \textbf{693 applicants}.
 \end{itemize}
 
 \end{rSection}
@@ -106,28 +105,26 @@ builds off the live server to on-demand instances from an \textbf{AMI} (\href{ht
 %----------------------------------------------------------------------------------------
 
 \begin{rSection}{PROJECTS}
-    \textbf{Redspot}, \textit{FastAPI, React.js, Clickhouse, Kafka, PostgreSQL, Docker} | (\href{https://github.com/ninadnaik10/redspot} {GitHub}) \hfill {June 2026}
+    \textbf{Redspot}, \textit{FastAPI, React.js, ClickHouse, Kafka, PostgreSQL, Docker} | (\href{https://github.com/ninadnaik10/redspot} {GitHub}) \hfill {Jun 2026}
     \begin{itemize}
     \setlength\itemsep{-0.6em}
-    \item Built a \textbf{real-time website click analytics platform} with a FastAPI ingestion server, Kafka message queue, and ClickHouse storage pipeline that captures user interactions via a lightweight JavaScript tracking script.
-    \item Developed a React dashboard that renders target websites in an iframe and overlays a \textbf{color-coded heatmap visualization of click density} using canvas, powered by live data queried from ClickHouse
+    \item Built an \textbf{event-driven website click analytics platform} in which a lightweight JavaScript tracker sends events to a FastAPI ingestion service, Kafka queues them and a consumer stores them in ClickHouse.
+    \item Developed a React dashboard that renders target websites in an iframe and overlays a \textbf{color-coded click-density heatmap} drawn on canvas from live ClickHouse data, with desktop, tablet and mobile viewport previews.
     \end{itemize}
-     \textbf{SpeakSure}, \textit{Python, FastAPI, Tensorflow, React.js, MongoDB} | (\href{https://speaksure.ninadnaik.me/} {Live app}, \href{https://github.com/ninadnaik10/speaksure} {GitHub}) \hfill {October 2025}
+     \textbf{SpeakSure}, \textit{Python, FastAPI, TensorFlow, React.js, MongoDB} | (\href{https://speaksure.ninadnaik.me/} {Live app}, \href{https://github.com/ninadnaik10/speaksure} {GitHub}) \hfill {Oct 2025}
     \begin{itemize}
         \setlength\itemsep{-0.6em}
-        \item  Built an \textbf{AI behavioural interview platform} that scores \textbf{spoken confidence} (1 to 5) with Wav2Vec2 and an MLP, with transcription, speech rate, filler words and \textbf{Gemini feedback}, analysed by a \textbf{background job queue on MongoDB}.
+        \item Engineered an \textbf{AI behavioural interview platform} that scores \textbf{spoken confidence} (1 to 5) with Wav2Vec2 and an MLP, with transcription, speech rate, filler words and \textbf{Gemini feedback}, analysed by a \textbf{background job queue on MongoDB}.
                   % \item Integrated features to save results, \textbf{analyze progress} and \textbf{provide comprehensive feedback}.
-        \item Moved inference from PyTorch and TensorFlow to \textbf{ONNX Runtime}, cutting about \textbf{3.5 GB} of ML dependencies from the server while running \textbf{19\% faster} per chunk; models trained on a custom \textbf{751}-clip dataset (paper at ICCIS 2025).
+        \item Migrated inference from PyTorch and TensorFlow to \textbf{ONNX Runtime}, cutting about \textbf{3.5 GB} of ML dependencies from the server while running \textbf{19\% faster} per chunk; models trained on a custom \textbf{751}-clip dataset (paper at ICCIS 2025).
               % \item Achieved the \textbf{3rd prize} in the Department-level Mini Project Competition (PyExpo 2.0).
     \end{itemize}
 
-  \textbf{Shortomega}, \textit{React.js, Next.js, Node.js, NestJS, TypeScript, Redis, Docker} | (\href{https://shortomega.ninadnaik.me/} {Live app}, \href{https://github.com/ninadnaik10/shortomega} {GitHub})  \hfill {November 2024}
+  \textbf{Shortomega}, \textit{React.js, Next.js, Node.js, NestJS, TypeScript, Redis, Docker} | (\href{https://shortomega.ninadnaik.me/} {Live app}, \href{https://github.com/ninadnaik10/shortomega} {GitHub})  \hfill {Nov 2024}
     \begin{itemize}
         \setlength\itemsep{-0.6em}
-        \item  Developed a \textbf{ Full Stack URL Shortening App} that generates short URLs for long URLs, with a focus on system design.
-        \item  Published a \href{https://tech.ninadnaik.me/using-redis-as-a-primary-database}{technical blog} describing the methods of using \textbf{Redis as a Primary Database}.
-
-        \item Implemented \textbf{Dashboard, Analytics data aggregation and Rate Limiting} features, and \textbf{Dockerized} the application.
+        \item Designed a \textbf{full-stack URL shortener} on \textbf{Redis as the primary database} (Hashes, Sets, HyperLogLog, Lua scripts), with JWT auth, analytics and rate limiting.
+        \item Dockerized and deployed the app publicly, and published a \href{https://tech.ninadnaik.me/using-redis-as-a-primary-database}{technical blog} on using \textbf{Redis as a Primary Database}.
     \end{itemize}
 
 \end{rSection}
@@ -135,18 +132,18 @@ builds off the live server to on-demand instances from an \textbf{AMI} (\href{ht
 \begin{rSection}{SKILLS}
 
     \begin{tabularx}{\textwidth}{@{} >{\raggedright\arraybackslash}X @{\hspace{4ex}} >{\raggedright\arraybackslash}X @{}}
-        \textbf{Languages}: TypeScript, JavaScript, Python, Go, C, C++, Java & \textbf{Web}: React.js, Tailwind CSS, HTML, CSS, Next.js, HeroUI         \\
-        \textbf{Backend \& APIs}: NestJS, FastAPI, Node.js, GraphQL, gRPC    & \textbf{Data \& Messaging}: PostgreSQL, MongoDB, Redis, Kafka \\
-        \textbf{AI}: MCP, A2A, RAG, LangChain, LangGraph, Agentic AI                     & \textbf{Platforms \& Tools}: Linux, Docker, Kubernetes, AWS  \end{tabularx}
+        \textbf{Languages}: TypeScript, JavaScript, Python, Go, C, C++, Java & \textbf{Web}: React.js, Next.js, Tailwind CSS, HTML, CSS, HeroUI         \\
+        \textbf{Backend \& APIs}: NestJS, FastAPI, Node.js, REST, GraphQL, gRPC, OAuth 2.0, JWT    & \textbf{Data \& Messaging}: PostgreSQL, MySQL, MongoDB, Redis, Kafka, ClickHouse \\
+        \textbf{AI}: MCP, A2A, RAG, LangChain, LangGraph, Agentic AI                     & \textbf{Platforms \& Tools}: Linux, Docker, Kubernetes, AWS, CI/CD  \end{tabularx}
 \end{rSection}
 
 \begin{rSection}{Research and Publication}
 
 \vspace{-1.25em}
-\item \textbf{Evaluating Human Speech Confidence with Deep Learning Techniques}, \textbf{Ninad Naik, et al.} \hfill {September 2025}
+\item \textbf{Evaluating Human Speech Confidence with Deep Learning Techniques}, \textbf{Ninad Naik, et al.} \hfill {Sep 2025}
 \begin{itemize}
 \setlength\itemsep{-0.6em}
-    \item Validated \textbf{Multi Layer Perceptron}, \textbf{Fuzzy Hypersphere Neural Network} and \textbf{Logistic Regression} classifiers over \textbf{MFCC} and \textbf{Wav2Vec2} features on a custom \textbf{751-recording} dataset using \textbf{5-fold stratified cross-validation}, reaching \textbf{96\% relaxed accuracy} across 5 confidence levels.
+    \item Validated \textbf{Multilayer Perceptron (MLP)}, \textbf{Fuzzy Hypersphere Neural Network} and \textbf{Logistic Regression} models on \textbf{MFCC} and \textbf{Wav2Vec2} features of a \textbf{751-recording} dataset with 5-fold cross-validation, reaching \textbf{96\% relaxed accuracy}.
     \item Presented at \textbf{ICCIS 2025}, BITS Pilani, Goa; accepted for publication in SCOPUS-indexed \textbf{Springer} LNNS. (\href{https://scrs.in/verify.html?file=rmyb9a80119.pdf}{Certificate})
 \end{itemize}
 
